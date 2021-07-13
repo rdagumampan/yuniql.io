@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YUNIQL</title>
+    <link>https://yuniql.io/</link>
+    <description>Recent content on YUNIQL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 21:56:55 +0100</lastBuildDate><atom:link href="https://yuniql.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How yuniql works</title>
+      <link>https://yuniql.io/docs/how-yuniql-works/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/how-yuniql-works/</guid>
+      <description>yuniql is a data platform devops tool using migration-based and database-first delivery model. Migration-based as each changeset to the schema and seed data is a set of carefully prepared scripts controlled with a version number. Database-first as it does not rely on application code to auto-generate the change scripts. yuniql faciliates database devops thru Azure Pipelines and Docker.
+At it&amp;rsquo;s core, yuniql organizes the database migration steps in series of directories and files.</description>
+    </item>
+    
+    <item>
+      <title>Get started!</title>
+      <link>https://yuniql.io/docs/get-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/get-started/</guid>
+      <description>Install yuniql CLI with Chocolatey or use alternative ways listed here https://yuniql.io/docs/install-yuniql/
+choco install yuniql Download samples for Sql Server. Advanced samples are also available here https://github.com/rdagumampan/yuniql/tree/master/samples
+git clone https://github.com/rdagumampan/yuniql.git c:\temp\yuniql cd c:\temp\yuniql\samples\basic-sqlserver-sample Prepare your connection string in an environment variable. This sample uses SQL Server on Docker container and you may also use your local default instance. For more connection string samples, visit https://www.connectionstrings.com/sql-server/.
+docker run -d -e &amp;#34;ACCEPT_EULA=Y&amp;#34; -e &amp;#34;MSSQL_SA_PASSWORD=P@ssw0rd!</description>
+    </item>
+    
+    <item>
+      <title>PosgtreSql</title>
+      <link>https://yuniql.io/docs/get-started-postgresql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/get-started-postgresql/</guid>
+      <description>Driver information Connection string format, see https://www.connectionstrings.com/postgresql/
+Server=&amp;lt;your-postgresql-server&amp;gt;;Port=5439;Database=&amp;lt;your-postgresql-database-name&amp;gt;; User Id=&amp;lt;your-postgresql-user&amp;gt;;Password=&amp;lt;your-postgresql-password&amp;gt;          Supported versions: PostgreSql v9.6 and later   Supports transactional DDL Yes (Per session, per version, per statement)   Supports CSV bulk import Yes   Supports batch statements No, .sql files are executed as single batch   Driver package npgsql, see https://www.npgsql.org/doc/index.html    Getting started Install yuniql CLI with Chocolatey or use alternative ways listed here https://yuniql.</description>
+    </item>
+    
+    <item>
+      <title>Migrate via Azure DevOps Pipelines</title>
+      <link>https://yuniql.io/docs/migrate-via-azure-devops-pipelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/migrate-via-azure-devops-pipelines/</guid>
+      <description>Run your database migration from Azure DevOps Pipelines. The tasks downloads package and cache it for later execution just like how Use .NET Core or Use Node tasks works. Find Yuniql on Azure DevOps MarketPlace. Install the DevOps Extension and add the following tasks.
+Several sample YAML pipelines are also available here https://github.com/rdagumampan/yuniql-tutorials/tree/master/yuniql-az-pipelines.
+Pre-requisites  Verified only with windows and ubuntu agents Requires a yuniql compliant directory structure. To create this structure you may install yuniql-cli, issue yuniql init, commit to a git repository and use the repository as input artifact in the pipelines.</description>
+    </item>
+    
+    <item>
+      <title>Migrate via ASP.NET Core App</title>
+      <link>https://yuniql.io/docs/migrate-via-aspnetcore-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/migrate-via-aspnetcore-application/</guid>
+      <description>Pre-requisites  .NET Core 3.0+ SDK SQL Server or Azure SQL Database Docker Client, if you choose SQL Server on Container  Prepare your database Deploy an SQL Server on Linux container or use your preferred instance.
+docker run -dit -e &amp;#34;ACCEPT_EULA=Y&amp;#34; -e &amp;#34;MSSQL_SA_PASSWORD=P@ssw0rd!&amp;#34; -p 1400:1433 -d mcr.microsoft.com/mssql/server:2017-latest Run migration from .NET Core web app Create new web app.
+dotnet --version 3.0.100 dotnet new web -o aspnetcore-sample cd aspnetcore-sample Add Yuniql.</description>
+    </item>
+    
+    <item>
+      <title>Migrate via .NET Core Console App</title>
+      <link>https://yuniql.io/docs/migrate-via-netcore-console-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/migrate-via-netcore-console-application/</guid>
+      <description>Pre-requisites  .NET Core 3.0+ SDK SQL Server or Azure SQL Database Docker Client, if you choose SQL Server on Container  Prepare your database Deploy an SQL Server on Linux container or use your preferred instance.
+docker run -d -e &amp;#34;ACCEPT_EULA=Y&amp;#34; -e &amp;#34;MSSQL_SA_PASSWORD=P@ssw0rd!&amp;#34; -p 1400:1433 -d mcr.microsoft.com/mssql/server:2017-latest Run migration from .NET Core console app Create new web app.
+dotnet --version 3.0.100 dotnet new console -o console-sample cd console-sample Add Yuniql.</description>
+    </item>
+    
+    <item>
+      <title>Migrate via Docker Container</title>
+      <link>https://yuniql.io/docs/migrate-via-docker-container/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/migrate-via-docker-container/</guid>
+      <description>Run your database migration thru a Docker container. This is specially helpful on Linux environments and CI/CD pipelines running on Linux Agents as it facilitates your migration without having to worry any local installations or runtime dependencies.
+When you run yuniql init command, a baseline directory structure will be created automatically. This includes a ready-to-use Dockerfile.
+When you call docker build, we pull the base image containing the nightly build of yuniql and all of your local structure is copied into the image.</description>
+    </item>
+    
+    <item>
+      <title>Bulk Import CSV Master Data</title>
+      <link>https://yuniql.io/docs/bulk-import-csv-master-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/bulk-import-csv-master-data/</guid>
+      <description>Master data and lookup tables almost comes natural as part of every database provisioning process. To support this, you may prepare a series of CSV files in the version directory. When you call yuniql run, yuniql will discovers the CSV files and bulk load into tables bearing same name as the CSV file. The following example demonstrates how to do this.
+Install Yuniql CLIhttps://yuniql.io/docs/install-yuniql/.
+choco install yuniql Initialize local version</description>
+    </item>
+    
+    <item>
+      <title>Use Token Replacement</title>
+      <link>https://yuniql.io/docs/token-replacement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/token-replacement/</guid>
+      <description>A series of key/value pairs of tokens can be passed to yuniql. During migration run, yuniql inspects all tokens in script files and replaces them. This is particulary useful in cases such as cross-database and linked-server queries where the databases and server names varies per environment.
+The following script would fail when run in TEST where EMPLOYEEDB_DEV database does not exists but EMPLOYEEDB_TEST.
+SELECT E.FirstName, E.LastName, E.Address, E.Email FROM [EMPLOYEEDB_DEV].[dbo].[Employee] E ORDER BY E.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Kube</title>
+      <link>https://yuniql.io/blog/welcome/</link>
+      <pubDate>Thu, 02 Mar 2017 21:56:55 +0100</pubDate>
+      
+      <guid>https://yuniql.io/blog/welcome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Run Environment-aware Migrations</title>
+      <link>https://yuniql.io/docs/environment-aware-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/environment-aware-scripts/</guid>
+      <description>Environment-aware scripts are sql files that targets specific environment. For example,you may want to create big tables in Production with dedicated SQL Server file group, apply partition functions and partition schemes, and customize index fill factor but you don&amp;rsquo;t need this in Development and Test environments. Another example is applying permissions by script that&amp;rsquo;s different in Non-Production and Production environments.
+Organize your repository Any directory inside yuniql standard directories (_init,_pre,_vxx.xx,_draft,_post,_erase) that starts with underscore (_) represents an environment.</description>
+    </item>
+    
+    <item>
+      <title>Install yuniql CLI</title>
+      <link>https://yuniql.io/docs/install-yuniql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/install-yuniql/</guid>
+      <description>Download yuniql.exe directly from GitHub Download zipped paclage containing yuniql.exe file and extract to your workspace directory. https://github.com/rdagumampan/yuniql/releases/download/latest/yuniql-cli-win-x64-latest.zip
+Install with choco package (windows-x64) Downloads latest yuniql CLI with Chocolatey package manager. See further instructions here https://chocolatey.org/install. Run these commands under Administrator mode.
+choco install yuniql -y yuniql version Install with tar.gz package (linux-x64) Install yuniql CLI on Linux. The package has been verified on Ubuntu 18.04+ and Debian on Windows Subsystem Linux (WSL).</description>
+    </item>
+    
+    <item>
+      <title>Baseline Your Database</title>
+      <link>https://yuniql.io/docs/baseline-database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/baseline-database/</guid>
+      <description>DRAFT
+There are two industry approach to versioning your relational database. These are Database-first and Code-first. Arguments on both are valid and we have great literature online on this debate.
+Yuniql is a database-first migration engine. This is article is based on an assumption that you have preference on Database-first strategy.
+Baselining strategies in database-first development Versioning your database begins with a Baseline. A Baseline version, is the v0.00 of your database schema and master data.</description>
+    </item>
+    
+    <item>
+      <title>Yuniql CLI Command Reference</title>
+      <link>https://yuniql.io/docs/yuniql-cli-command-reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/yuniql-cli-command-reference/</guid>
+      <description>Yuniql CLI is powerful interface to prepare and run migrations from developer&amp;rsquo;s IDE, DBA&amp;rsquo;s machine or thru continuous integration server. Database developers can follow these CLI sequence calls to prepare local db version before commiting to git repository:
+ yuniql init / initializes db project structure yuniql run / runs migrations yuniql list / shows existing versions applied yuniql erase / cleans up when done local testing  yuniql init  Creates baseline directory structure that serves as your database migration workspace.</description>
+    </item>
+    
+    <item>
+      <title>Tips and Tricks</title>
+      <link>https://yuniql.io/docs/tips-and-tricks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/tips-and-tricks/</guid>
+      <description>Get some sanity, organize your project into sub-directories When versioning an existing database, you may end up creating a giant script file with all the noise created by your script-generation tool. As yuniql supports child directories, you may organize your version directories as shown below. Use a sequence number prefix to guarantee they executes in the right order.
+cd C:\play\yuniql\samples\sqlserver-adventureworkslt2016-sample cd v0.00 dir Directory of C:\play\yuniql\samples\sqlserver-adventureworkslt2016-sample\v0.00 11/03/2019 13:06 &amp;lt;DIR&amp;gt; 01-schemas 11/03/2019 13:06 &amp;lt;DIR&amp;gt; 02-types 11/03/2019 13:06 &amp;lt;DIR&amp;gt; 03-xmlschemas 11/03/2019 16:43 &amp;lt;DIR&amp;gt; 04-tables 11/03/2019 16:51 &amp;lt;DIR&amp;gt; 08-sequences 11/03/2019 16:51 &amp;lt;DIR&amp;gt; 09-triggers 11/10/2019 10:40 98 README.</description>
+    </item>
+    
+    <item>
+      <title>MySql</title>
+      <link>https://yuniql.io/docs/get-started-mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/get-started-mysql/</guid>
+      <description>Driver information Connection string format, see https://www.connectionstrings.com/mysql/
+Server=&amp;lt;your-postgresql-server&amp;gt;;Port=5439;Database=&amp;lt;your-postgresql-database-name&amp;gt;; User Id=&amp;lt;your-postgresql-user&amp;gt;;Password=&amp;lt;your-postgresql-password&amp;gt;          Supported versions: v5.7, v8.*, and later   Supports transactional DDL No (Per statement)   Supports CSV bulk import Yes   Supports batch statements No, .sql files are executed as single batch   Driver package MySqlConnect.NET, see https://github.com/mysql/mysql-connector-net    Getting started Install yuniql CLI with Chocolatey or use alternative ways listed here https://yuniql.</description>
+    </item>
+    
+    <item>
+      <title>Redshift</title>
+      <link>https://yuniql.io/docs/get-started-resdshift/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/get-started-resdshift/</guid>
+      <description>Driver information Connection string format, see https://www.connectionstrings.com/postgresql/
+Server=&amp;lt;your-redshift-server&amp;gt;;Port=5439;Database=&amp;lt;your-redshift-database-name&amp;gt;; User Id=&amp;lt;your-redshift-user&amp;gt;;Password=&amp;lt;your-redshift-password&amp;gt;          Supported versions: Redshift 1.0.2* and later   Supports transactional DDL Yes (Per session, per version, per statement)   Supports CSV bulk import Yes   Supports batch statements No, .sql files are executed as single batch   Driver package npgsql, see https://www.npgsql.org/doc/index.html    Getting started Install yuniql CLI with Chocolatey or use alternative ways listed here https://yuniql.</description>
+    </item>
+    
+    <item>
+      <title>Snowflake</title>
+      <link>https://yuniql.io/docs/get-started-snowflake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/get-started-snowflake/</guid>
+      <description>Driver information Connection string format, see https://www.connectionstrings.com/postgresql/
+host=&amp;lt;your-snowflake-host&amp;gt;com;account=&amp;lt;your-snowflake-account&amp;gt;; user=&amp;lt;your-snowflake-user&amp;gt;;password&amp;lt;your-snowflake-password&amp;gt;;db=&amp;lt;your-snowflake-database-name&amp;gt;;schema=PUBLIC          Supported versions: Snowflake 3.6.2* and later   Supports transactional DDL No (Per statement)   Supports CSV bulk import Yes   Supports batch statements Yes, SQL statements are can be batch separated with GO word   Driver package Yuniql.Snowflake.Data, see https://www.nuget.org/packages/Yuniql.Snowflake.Data    Getting started Install yuniql CLI with Chocolatey or use alternative ways listed here https://yuniql.</description>
+    </item>
+    
+    <item>
+      <title>SQL Server</title>
+      <link>https://yuniql.io/docs/get-started-sqlserver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/get-started-sqlserver/</guid>
+      <description>Driver information Connection string format, see https://www.connectionstrings.com/sql-server/
+Server=&amp;lt;your-sqlserver-name&amp;gt;,1400;Database=&amp;lt;your-sqlserver-database-name&amp;gt;; User Id=&amp;lt;your-sqlserver-user&amp;gt;;Password=&amp;lt;your-sqlserver-password&amp;gt;          Supported versions: Sql Server 2017 and later, Azure SQL Database   Supports transactional DDL Yes (Per session, per version, per statement)   Supports CSV bulk import Yes   Supports batch statements Yes, uses GO batch separator   Driver package System.Data.SqlClient, see https://www.nuget.org/packages/System.Data.SqlClient    Getting started Install yuniql CLI with Chocolatey or use alternative ways listed here https://yuniql.</description>
+    </item>
+    
+    <item>
+      <title>Supported Platforms</title>
+      <link>https://yuniql.io/docs/supported-platforms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/supported-platforms/</guid>
+      <description>Database Platforms    Platform Build Status Description     SqlServer  Sql Server 2017, Azure SQL Database   PostgreSql  PostgreSql v9.6, v12.1   MySql  MySql v5.7, v8.0   MariaDB  MariaDb v10.2, latest    *** Amazon RDS Aurora, Snowflake Data Warehouse, Azure Synapse Analytics (Azure DW)
+Distribution Channels    Distribution Build Status Description     Docker image linux-x64  docker pull rdagumampan/yuniql:linux-x64-latest   Docker imiage win-x64  docker pull rdagumampan/yuniql:win-x64-latest    *** planned or being evaluated/developer/tested</description>
+    </item>
+    
+    <item>
+      <title>Why yuniql</title>
+      <link>https://yuniql.io/docs/why-yuniql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/docs/why-yuniql/</guid>
+      <description>Accelerates time to market Developers wants control of the world, DBAs says they didn’t get the memo. In this dev and ops tug-of-war, the release gets delayed and opportunities are lost. yuniql promotes a Database DevOps model where developers and DBAs can co-own the schema evolution. A picture where developers can also take full control of schema during development while DBAs review the Pull Requests to next version before transporting to Staging and Production.</description>
+    </item>
+    
+  </channel>
+</rss>

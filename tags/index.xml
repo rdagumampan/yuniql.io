@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on YUNIQL</title>
+    <link>https://yuniql.io/tags/</link>
+    <description>Recent content in Tags on YUNIQL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 21:56:55 +0100</lastBuildDate><atom:link href="https://yuniql.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>example</title>
+      <link>https://yuniql.io/tags/example/</link>
+      <pubDate>Thu, 02 Mar 2017 21:56:55 +0100</pubDate>
+      
+      <guid>https://yuniql.io/tags/example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://yuniql.io/tags/markdown/</link>
+      <pubDate>Thu, 02 Mar 2017 21:56:55 +0100</pubDate>
+      
+      <guid>https://yuniql.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://yuniql.io/tags/database/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://yuniql.io/tags/devops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>migration</title>
+      <link>https://yuniql.io/tags/migration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/tags/migration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://yuniql.io/tags/mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>posgresql</title>
+      <link>https://yuniql.io/tags/posgresql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/tags/posgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sqlserver</title>
+      <link>https://yuniql.io/tags/sqlserver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yuniql.io/tags/sqlserver/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>example on YUNIQL</title>
+    <link>https://yuniql.io/tags/example/</link>
+    <description>Recent content in example on YUNIQL</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 21:56:55 +0100</lastBuildDate><atom:link href="https://yuniql.io/tags/example/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to Kube</title>
+      <link>https://yuniql.io/blog/welcome/</link>
+      <pubDate>Thu, 02 Mar 2017 21:56:55 +0100</pubDate>
+      
+      <guid>https://yuniql.io/blog/welcome/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
